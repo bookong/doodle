@@ -10,29 +10,85 @@ public class TextDecoratorTest {
     /**
      * Ansi Console
      * 
-     * @param args
      * @see https://www.cnblogs.com/sivkun/p/7890547.html
      */
     public static void main(String[] args) {
-        System.out.println(TextDecorator.F_BLOCK.format("黑色字"));
-        System.out.println(TextDecorator.F_RED.format("红色字"));
-        System.out.println(TextDecorator.F_GREEN.format("绿色字"));
-        System.out.println(TextDecorator.F_YELLOW.format("黄色字"));
-        System.out.println(TextDecorator.F_BLUE.format("蓝色字"));
-        System.out.println(TextDecorator.F_PURPLE.format("紫色字"));
-        System.out.println(TextDecorator.F_AZURE.format("天蓝字"));
-        System.out.println(TextDecorator.F_WHITE.format("白色字"));
-        System.out.println();
-        System.out.println(TextDecorator.B_BLACK_F_RED.format("黑底红字"));
-        System.out.println(TextDecorator.B_BLACK_F_WHITE.format("黑底白字"));
-        System.out.println();
-        System.out.println(TextDecorator.F_WHITE_B_RED.format("红底白字"));
-        System.out.println(TextDecorator.F_WHITE_B_GREEN.format("绿底白字"));
-        System.out.println(TextDecorator.F_WHITE_B_YELLOW.format("黄底白字"));
-        System.out.println(TextDecorator.F_WHITE_B_BLUE.format("蓝底白字"));
-        System.out.println(TextDecorator.F_WHITE_B_PURPLE.format("紫底白字"));
-        System.out.println(TextDecorator.F_WHITE_B_AZURE.format("天蓝底白字"));
+        print(TextDecorator.F_BLOCK);
+        print(TextDecorator.F_RED);
+        print(TextDecorator.F_GREEN);
+        print(TextDecorator.F_YELLOW);
+        print(TextDecorator.F_BLUE);
+        print(TextDecorator.F_PURPLE);
+        print(TextDecorator.F_AZURE);
+        print(TextDecorator.F_WHITE);
+        System.out.println("--------");
+        print(TextDecorator.B_BLACK_F_RED);
+        print(TextDecorator.B_BLACK_F_GREEN);
+        print(TextDecorator.B_BLACK_F_YELLOW);
+        print(TextDecorator.B_BLACK_F_BLUE);
+        print(TextDecorator.B_BLACK_F_PURPLE);
+        print(TextDecorator.B_BLACK_F_AZURE);
+        print(TextDecorator.B_BLACK_F_WHITE);
+        System.out.println("--------");
+        print(TextDecorator.B_RED_F_BLOCK);
+        print(TextDecorator.B_RED_F_GREEN);
+        print(TextDecorator.B_RED_F_YELLOW);
+        print(TextDecorator.B_RED_F_BLUE);
+        print(TextDecorator.B_RED_F_PURPLE);
+        print(TextDecorator.B_RED_F_AZURE);
+        print(TextDecorator.B_RED_F_WHITE);
+        System.out.println("--------");
+        print(TextDecorator.B_GREEN_F_BLOCK);
+        print(TextDecorator.B_GREEN_F_RED);
+        print(TextDecorator.B_GREEN_F_YELLOW);
+        print(TextDecorator.B_GREEN_F_BLUE);
+        print(TextDecorator.B_GREEN_F_PURPLE);
+        print(TextDecorator.B_GREEN_F_AZURE);
+        print(TextDecorator.B_GREEN_F_WHITE);
+        System.out.println("--------");
+        print(TextDecorator.B_YELLOW_F_BLOCK);
+        print(TextDecorator.B_YELLOW_F_RED);
+        print(TextDecorator.B_YELLOW_F_GREEN);
+        print(TextDecorator.B_YELLOW_F_BLUE);
+        print(TextDecorator.B_YELLOW_F_PURPLE);
+        print(TextDecorator.B_YELLOW_F_AZURE);
+        print(TextDecorator.B_YELLOW_F_WHITE);
+        System.out.println("--------");
+        print(TextDecorator.B_BLUE_F_BLOCK);
+        print(TextDecorator.B_BLUE_F_RED);
+        print(TextDecorator.B_BLUE_F_GREEN);
+        print(TextDecorator.B_BLUE_F_YELLOW);
+        print(TextDecorator.B_BLUE_F_PURPLE);
+        print(TextDecorator.B_BLUE_F_AZURE);
+        print(TextDecorator.B_BLUE_F_WHITE);
+        System.out.println("--------");
+        print(TextDecorator.B_PURPLE_F_BLOCK);
+        print(TextDecorator.B_PURPLE_F_RED);
+        print(TextDecorator.B_PURPLE_F_GREEN);
+        print(TextDecorator.B_PURPLE_F_YELLOW);
+        print(TextDecorator.B_PURPLE_F_BLUE);
+        print(TextDecorator.B_PURPLE_F_AZURE);
+        print(TextDecorator.B_PURPLE_F_WHITE);
+        System.out.println("--------");
+        print(TextDecorator.B_AZURE_F_BLOCK);
+        print(TextDecorator.B_AZURE_F_RED);
+        print(TextDecorator.B_AZURE_F_GREEN);
+        print(TextDecorator.B_AZURE_F_YELLOW);
+        print(TextDecorator.B_AZURE_F_BLUE);
+        print(TextDecorator.B_AZURE_F_PURPLE);
+        print(TextDecorator.B_AZURE_F_WHITE);
+        System.out.println("--------");
+        print(TextDecorator.B_WHITE_F_BLACK);
+        print(TextDecorator.B_WHITE_F_RED);
+        print(TextDecorator.B_WHITE_F_GREEN);
+        print(TextDecorator.B_WHITE_F_YELLOW);
+        print(TextDecorator.B_WHITE_F_BLUE);
+        print(TextDecorator.B_WHITE_F_PURPLE);
+        print(TextDecorator.B_WHITE_F_AZURE);
+        System.out.println("--------");
+    }
 
-        System.out.println(TextDecorator.F_BLACK_B_WHITE.format("白底黑字"));
+    private static void print(TextDecorator textDecorator) {
+        System.out.println(textDecorator.format(textDecorator.getName() + " : " + textDecorator.toString()));
     }
 }
