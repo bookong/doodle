@@ -5,19 +5,19 @@ package com.github.bookong.doodle.exceptions;
  * 
  * @author jiangxu
  */
-public class InitException extends Exception {
+public class InitError extends Exception {
 
     private static final long serialVersionUID = -4046029236046801494L;
 
-    public InitException(){
+    public InitError(){
         super();
     }
 
-    public InitException(String message){
+    public InitError(String message){
         super(message);
     }
 
-    public InitException(String message, Throwable cause){
+    public InitError(String message, Throwable cause){
         super(message, cause);
     }
 }
