@@ -21,6 +21,7 @@ public class TextFormaterTest {
             test(tf, "4.测试${x$[x}得到$[ff]尺寸");
             test(tf, "5.测试${}$[x]得到$[ff]尺寸");
             test(tf, "6.测试${}$[x}得到$[ff]尺寸");
+            System.out.println(String.format("%2$s -> %1$s + %2$s", "A1", "A2"));
         } catch (InitError e) {
             e.printStackTrace();
         }
